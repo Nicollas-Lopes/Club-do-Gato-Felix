@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club do Gato Félix</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            align-items: center;
+
+            border: 5px solid rgb(75, 75, 75);
+            margin: 20px auto;
+            padding: 15px;
+            max-width: 1000px; 
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+        }
+    
+        .tamanho {
+            width: 380px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        
+        .caixa {
+           font-size: 15px; 
+           color: rgb(184, 184, 184);
+           font-weight: bold;
+           margin: 8px 0;
+           padding: 8px;
+           border: 1px solid #ccc;
+           border-radius: 8px;
+           width: 100%; 
+           box-sizing: border-box;
+        }
+
+        .btn1, .btn2 {
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 8px 0;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+        }
+
+        .btn1:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(255, 0, 0);
+        }
+
+        .btn2:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(4, 0, 255);
+        }
+
+        .forms {
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+            min-width: 150px;
+
+            background-color: rgb(156, 156, 156);
+            border-radius: 25px;
+            padding: 15px;
+            gap: 5px;
+            
+        }
+        .contralizar{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/Gao.png" alt="gato" class="tamanho">
+
+        <div class="forms">
+            <h1 class="centralizar">Cadastro do clube Félix</h1>
+            <input type="text" id="nome" placeholder="Coloque seu Nome" class="caixa">
+            <input type="text" id="mail" placeholder="Seu E-mail" class="caixa">
+            <input type="text" id="fone" placeholder="Telefone" class="caixa">
+
+            <button type="button" id="Cadastrar" class="btn1">Cadastrar</button>
+            <button type="button" id="enviar" class="btn2">Enviar</button>
+        </div>
+    </div>
+</body>
+</html>
